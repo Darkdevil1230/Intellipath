@@ -3,7 +3,7 @@ import toast from 'react-hot-toast';
 import useAuthStore from '../store/authStore';
 import { classifyApiError } from '../utils/apiErrors';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = import.meta.env.VITE_API_URL || 'https://intellipath-5uny.onrender.com';
 
 const api = axios.create({
   baseURL: `${API_URL}/api`,
