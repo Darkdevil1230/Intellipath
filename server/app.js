@@ -21,6 +21,9 @@ const monitorRoutes = require('./routes/monitor');
 
 const app = express();
 
+// Trust first proxy (useful when behind reverse proxy/load balancer)
+app.set('trust proxy', 1);
+
 // Security middleware
 setupSecurity(app);
 
